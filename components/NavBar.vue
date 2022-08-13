@@ -1,11 +1,11 @@
 <template>
-    <nav class="bg-gray-800">
+    <nav class="bg-background-nav-menu text-copy-primary ">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-16">
             <div class="flex items-center">
               <nuxt-link :to="$t('link.home')" aria-label="Back to home"
                class="text-copy-primary font-bold hover:fill-blue-500">
-                <svg  class="text-copy-primary font-bold hover:fill-blue-500"
+                <svg  class="font-bold hover:fill-blue-500"
                     xmlns="http://www.w3.org/2000/svg"
                     version="1.0"
                     width="180px"
