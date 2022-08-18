@@ -1,5 +1,5 @@
 <template>
-<div class="h-max">
+<div>
    <header class="shadow">     
        <div class="flex p-4 mb-5 justify-center  bg-background-secondary">   
         <nuxt-link to="/" class="text-copy-nav-item underline hover:text-blue-800 font-bold mr-5">TESTE</nuxt-link>
@@ -7,9 +7,9 @@
       </div>
     </header>
       <main >
-          <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 p-8 grid md:grid-rows-2 md:grid-flow-col grid-cols-6 gap-4">        
-         <PostPreview></PostPreview>
-        <div class="m-4 lg:col-span-1 bg-background-secondary md:row-span-2 col-span-6 overflow-hidden rounded-lg shadow-card ">
+          <div class="max-w-7xl mx-auto py-6 md:px-6 md:px-8 p-8 grid  md:grid-flow-row grid-cols-5 gap-2">        
+         <PostPreview></PostPreview>       
+        <div class="m-4 md:col-end-6 md:row-start-1 md:row-end-4 md:col-span-1 bg-background-secondary col-span-6  overflow-hidden rounded-lg shadow-card ">
           <h4 class="m-5">Tags</h4>
            <div class=" p-6 mx-2">   
               <nuxt-link class="flex text-copy-primary justify-between" to="/"><span>tag </span>
@@ -26,7 +26,7 @@
 import PostPreview from "../../components/blog/PostPreview.vue";
  export default {
     components: {
-        PostPreview,        
+        PostPreview,
       },
 
  }

@@ -1,7 +1,7 @@
 <template>
- <div class="posts grid grid-cols-4 grid-rows-1 gap-4 lg:col-span-5 col-span-6 content-center m-4">
+ <div class="posts md:col-span-1 col-span-5 content-center m-4">
     <div
-        class="w-full row-span-1 lg:col-span-1  col-span-4  p-4">
+        class="w-full ">
         <article
         class="article-card bg-background-primary overflow-hidden rounded-lg shadow-card flex-1">
         <nuxt-link
@@ -22,13 +22,11 @@
             />
             </figure>
         </nuxt-link>
-        <div class="p-8">
-            <h2 class="text-2xl mb-6">
+        <div class="p-4">
+            <h2 class="text-2xl mb-3">
             <nuxt-link
-                class="block text-copy-primary hover:text-blue-500"
-                to="/"
-                >Titulo</nuxt-link
-            >
+                class="break-words text-copy-primary hover:text-blue-500"
+                to="/">Titulo</nuxt-link>
             </h2>
             <div class="text-sm text-copy-primary md:flex mb-4">
             <p class="author">Autor Nome</p>

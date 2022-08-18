@@ -1,4 +1,5 @@
 import { messages } from './i18n'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -18,7 +19,9 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/main.css' ],
+  css: ['@/assets/main.css',
+   'vue-slick-carousel/dist/vue-slick-carousel.css',
+   'vue-slick-carousel/dist/vue-slick-carousel-theme.css' ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [

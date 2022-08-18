@@ -2,7 +2,7 @@
   
     <footer
       id="footer"
-      class="footer content-wrapper bg-gray-800"
+      class="mt-auto  content-wrapper bg-gray-800"
       role="contentinfo"
     >
       <div

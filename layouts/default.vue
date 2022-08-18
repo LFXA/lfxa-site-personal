@@ -1,7 +1,7 @@
 <template>
-  <div :class="theme +' flex flex-col h-max justify-between bg-background-primary text-copy-primary'"> 
+  <div :class="theme +' flex flex-col min-h-screen bg-background-primary text-copy-primary'"> 
       <HeaderPartial>
-        <button class="ml-2 border-2 border-transparent text-gray-200 rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-blue-700"
+        <button class="ml-2 border-2 border-transparent text-gray-200 rounded-full hover:text-white focus:outline-none focus:text-white"
                   aria-label="Theme" v-on:click="changeTheme()">            
               <Fa
                   v-if="theme == 'theme-light'"
@@ -29,11 +29,7 @@ export default {
       theme: "theme-light"
     };
   },
-  created() {
-     if(process.client) {
-         this.theme = localStorage.getItem("theme") || "theme-light";
-     }
-  },
+
   components: {
     HeaderPartial,
     FooterPartial,

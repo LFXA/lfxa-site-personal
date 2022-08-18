@@ -7,5 +7,4 @@ export const skillsPTBR =
 export const skillsENUS =
 {
     certificateAluraDotNet: ".NET training certificate from Alura",
-
 }

@@ -38,6 +38,66 @@
     color: var(--color);
     transition: background-color 0.3s;
   }
+
   a {
     color: var(--color-primary);
   }
+
+  button.slick-prev:before, button.slick-next:before {
+    color: var(--text-copy-primary) !important;
+  }
+
+  .custom-dot-class {
+    background-color: transparent; 
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .custom-dot-class li{
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+  .custom-dot-class li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;   
+     opacity: 0.25;
+    color: var(--text-copy-primary);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .custom-dot-class  li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.custom-dot-class li.slick-active button:before {
+  opacity: 1;
+  color: var(--text-copy-primary);
+}
