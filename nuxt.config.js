@@ -21,10 +21,14 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['@/assets/main.css',
    'vue-slick-carousel/dist/vue-slick-carousel.css',
-   'vue-slick-carousel/dist/vue-slick-carousel-theme.css' ],
+   'vue-slick-carousel/dist/vue-slick-carousel-theme.css',
+   'tippy.js/themes/light.css',
+   'tippy.js/themes/light-border.css',
+   'tippy.js/themes/google.css',
+   'tippy.js/themes/translucent.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
+  plugins: ['~/plugins/vue-tooltip.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -34,6 +38,7 @@ export default {
   buildModules: [    
     '@nuxtjs/tailwindcss',
     '@nuxtjs/fontawesome',
+
   ],  
   tailwindcss: {
     // add '~tailwind.config` alias

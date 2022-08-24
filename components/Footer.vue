@@ -2,7 +2,7 @@
   
     <footer
       id="footer"
-      class="mt-auto  content-wrapper bg-gray-800"
+      class="mt-auto  content-wrapper bg-background-secondary"
       role="contentinfo"
     >
       <div
@@ -12,23 +12,21 @@
           {{ $t("footerMsg1") }}
           <span class="italic font-semibold">LFXA,</span>
           {{ $t("footerMsg2") }}
-          <a href="https://nuxtjs.org/" target="_blank">Nuxt </a>
+          <a href="https://nuxtjs.org/" class="text-copy-nav-item" target="_blank">Nuxt </a>
           {{ $t("footerMsg3") }}
-          <a href="https://tailwindcss.com/" target="_blank">TailwindCSS. </a>
+          <a href="https://tailwindcss.com/"  class="text-copy-nav-item" target="_blank">TailwindCSS. </a>
         </p>
 
         <ul class="flex justify-center">
           <li
             class="mr-4"
             v-for="element in social"
-            :key="element.link"
-          >
+            :key="element.link">
             <a
               :href="element.link"
               class="block text-white hover:text-blue-700"
               :aria-label="element.icon"
-              target="_blank"
-            >
+              target="_blank">
               <fa :icon="['fab', element.icon]" size="lg" />
             </a>
           </li>

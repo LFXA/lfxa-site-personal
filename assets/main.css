@@ -101,3 +101,23 @@
   opacity: 1;
   color: var(--text-copy-primary);
 }
+
+.shell {
+  height: 20px;
+  width: 250px;
+  border: 1px solid #aaa;
+  border-radius: 16px;
+  padding: 0px;
+}
+
+.bar {   
+  height: 18px;
+  width: 15px;
+  border-radius: 12px;
+  
+}
+.bar span {
+  float: right;
+  padding: 0px 5px;      
+  font-size: 0.7em
+}

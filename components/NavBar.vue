@@ -106,7 +106,7 @@
               <div class="ml-4 flex items-center p-3 md:ml-6">
              <IdiomPartial/>
               <SearchPartial/>
-               <slot></slot>
+               <slot/>
 
                 <!-- Profile dropdown -->
                 <div class="ml-3 relative">
